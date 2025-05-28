@@ -24,3 +24,10 @@ defaults:
 minima:
   show_rss_footer_link: false
 
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub-Flavored Markdown
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  syntax_highlighter: rouge
