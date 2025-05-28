@@ -1,11 +1,11 @@
 <nav>
-  <a href="/">Home</a>
-  <a href="/tags">Tags</a>
+  <a href="/website-mathclub">Home</a>
+  <a href="/website-mathclub/tags">Tags</a>
   <div class="dropdown">
     <button class="dropbtn">Categories</button>
     <div class="dropdown-content">
       {% for category in site.categories %}
-        <a href="/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
+        <a href="/website-mathclub/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
       {% endfor %}
     </div>
   </div>
