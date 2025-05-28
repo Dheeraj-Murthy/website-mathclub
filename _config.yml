@@ -5,6 +5,11 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 
+
+domain: dheeraj-murthy.github.io
+url: https://dheeraj-murthy.github.io
+baseurl: /website-mathclub 
+
 collections:
   posts:
     output: true
@@ -19,6 +24,3 @@ defaults:
 minima:
   show_rss_footer_link: false
 
-domain: dheeraj-murthy.github.io
-url: https://dheeraj-murthy.github.io
-baseurl: /website-mathclub 
