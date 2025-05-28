@@ -1,0 +1,7 @@
+---
+title: "Our Robotics Workshop"
+date: 2023-10-15
+tags: [workshop, robotics]
+---
+
+Your content here...

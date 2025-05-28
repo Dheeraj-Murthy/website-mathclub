@@ -1,0 +1,20 @@
+title: Math Club Site
+description: All our activities and projects
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  posts:
+    output: true
+    permalink: /activities/:path/
+
+defaults:
+  - scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: post
+minima:
+  show_rss_footer_link: false
