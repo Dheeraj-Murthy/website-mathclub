@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchResults = document.getElementById('searchResults');
 
     // Fetch search index
-    fetch('/search.json')
+    fetch('{{site.baseurl}}/search.json')
         .then(res => res.json())
         .then(posts => {
             const idx = lunr(function() {
