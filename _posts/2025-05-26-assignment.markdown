@@ -5,125 +5,99 @@ tags: [images, full]
 categories: [spit]
 ---
 
-The Future Beneath: Speculating an Underwater Civilization
+# SPIT Assignment
 
-Part 1: Visuals and Documentation Process
+## Speculative Scenario:
 
-Speculative Scenario: Life Below the Surface
+### Haven of the Depths: Civilization Underneath
 
-This speculative scenario imagines a near-future Earth where rising sea levels, climate change, and overpopulation have driven a section of humanity to adapt to underwater living. As land becomes increasingly uninhabitable, humanity must explore the ocean as a viable domain for civilization. In this future, people either:
-• undergo genetic modifications to develop fins, gills, and pressure-resistant physiology, or
-• wear advanced diving suits that facilitate long-term aquatic life.
+This speculative scenario imagines a dystopian future where the increasing global-warming and pollution have rendered the Earth's atmosphere to be inhospitable to most forms of life. The only creatures that can survive this brutal wasteland are a select few species of insects and fungi like mushrooms. This has caused humanity to consider the ocean as a viable domain for habitation.
 
-This civilization builds self-sustaining underwater cities, drawing energy from hydrothermal vents, growing food through aquaponics, and relying on algae-based oxygen regeneration systems. Society adapts to new forms of governance, aesthetics, and interaction shaped by their aquatic context.
+Civilization now survives as a largely aquatic society with self-sustaining underwater cities, powered by hydrothermal vents and nuclear power-plants. Most of the food is grown in humongous aquaponics, relying on algae-based oxygen regeneration systems.
 
-This scenario was inspired by speculative design readings from the course (especially Auger & Loizeau’s material fictions and Dunne & Raby’s critical design principles), as well as contemporary ecological issues and rapid technological advancement in gene editing (e.g., CRISPR) and underwater robotics.
+The people have undergone many changes in order to adapt to this new underwater lifestyle, with some people developing and using very advanced water breathing technology and self-replenishing oxygen tanks. Some others have decided to undergo gene-editing and grew gills, fins and pressure-resistant physiology to continue living in these depths.
 
-⸻
+### Platform Selection
 
-Platform Selection
+Although I experimented with Chat-GPT, which uses DALL-E, and Canva, I finally settled on using Gemini for the image generation. This is because it offers the best balance between customisability and quality. It also enables the user to easily edit and iterate the images by suggesting changes. It is also very responsive with the wait and queue time as low as as few seconds.
 
-I used DALL·E 3 for all image generation tasks. I chose this platform for the following reasons:
-• Clarity of output: DALL·E offers high visual fidelity and can interpret detailed prompts well.
-• Ease of editing: The inpainting/editing features allow iterative refinement.
-• Integration with ChatGPT: Its integration allowed seamless prompt refinement and faster feedback loops.
+<div style="page-break-before: always;"></div>
 
-Although MidJourney is known for artistic style, I prioritized DALL·E’s clearer rendering of complex, futuristic scenes and humanoid modifications.
+## Generated Images
 
-⸻
-
-Image 1: The Aquatic Metropolis
+### Image 1: The Aquatic Metropolis
 
 Prompt:
-“Futuristic underwater city with transparent domes, bioluminescent lights, aquatic vegetation, futuristic architecture integrated into coral reefs, glowing tunnels, schools of fish swimming through city streets, blue oceanic background.”
+"Create an image of an underwater society where the society has to live under water due to rising sea levels and global warming also depict the atmosphere above the sea to be unlivable and make sure to show that the people are either genetically enhanced to have gills or are using diving gear."
 
 Intent:
-To depict the central hub of the underwater civilization. This image represents the urban fabric of the society – a blend of organic marine environments and futuristic architecture.
+To illustrate an underwater city. This image would show how a city in an underwater civilization would look like. With the unique mode of transportation used by people to move around the city and how this changes transport logistics and the lives of the common folk.
 
-Process:
-Three iterations were required. Initial attempts produced overly sci-fi visuals disconnected from the natural marine context. I refined the prompt to stress “coral integration” and “aquatic vegetation” for balance.
+Iteration:
+This image was successfully created in a single try without the need for any prototyping. This might be due to the absence of human features that AI generally struggles with drawing.
 
-⸻
+<div style="page-break-before: always;"></div>
 
-Image 2: Genetically Modified Citizens
+Image:
+![underwater city](/Users/dheerajmurthy/Downloads/spit_image.jpeg)
+
+### Image 2: Genetically modified citizens
 
 Prompt:
-“Underwater humans with gills and fins, swimming gracefully in ocean currents, futuristic bioengineered appearance, semi-transparent fins, glowing eyes, natural skin tones, no breathing gear, symbiosis with marine life.”
+"Give me the image of a person who has webbed feet and fins as well as gills due to genetic modification in order to facilitate living underwater"
 
 Intent:
-To visualize the genetically modified population. These people have adapted to marine life through bioengineering, showcasing a post-human aesthetic.
+To illustrate how a person who has undergone genetic modifications in-order to survive underwater in an aquatic world would look like. This showcases the bioengineering of the society as well as their aesthetics.
 
 Process:
-Multiple trials were necessary to avoid overly monstrous interpretations. Prompts were adjusted to include “graceful,” “natural skin tones,” and “bioengineered beauty” to humanize the posthuman forms.
+Multiple trials were necessary in the creation of this image as AI generally tend to find difficulty in drawing human features such as limbs and skin tones. The first image was a pair of legs with a detached head on the floor. The next few iterations all were majoritarily just a pair of legs with fins and webbed-feet. After the fifth iterations the AI finally succeeded in drawing the entire person, but the person was facing the other way. After asking for the person to be facing towards me, the desired image was successfully generated.
 
-⸻
+Image:
+![genetically modified human](/Users/dheerajmurthy/Downloads/merman.png)
 
-Image 3: Technologically Enhanced Divers
+### Image 3: Unaltered Humans relying on Technology for survival
 
 Prompt:
-“Humans in advanced underwater suits with full helmets, biomechanical limbs, oxygen tanks, HUD display on visors, walking on seabed, background of glowing algae and hydrothermal vents, high-tech but streamlined.”
+"create the image of a sci-fi diver who lives underwater permanently. His suit is futuristic and made to ensure he can wear it at all times"
 
 Intent:
-To highlight the technological path for underwater adaptation. These citizens use gear rather than biology to thrive underwater.
+To showcase another section of people residing in this Sub-oceanic society. These people have refused to undergo genetic mutations and augmentations and have instead chosen to develop and use advanced technology to create underwater suits to ensure their livelihood in this dystopian civilization.
 
 Process:
-Only two edits were needed. One early version had overly bulky suits, which I refined with terms like “streamlined” and “biomechanical” to emphasize sleekness.
+Only two edits were needed. One early version had overly bulky suits, which I refined with terms like “streamlined” and “biomechanical” to emphasize sleekness. The next was to specify "futuristic" for a more sci-fi cyberpunk style design.
 
-⸻
+Image:
+![diver](/Users/dheerajmurthy/Downloads/cybersuit.png)
 
-Image 4: Cultural Ritual in the Deep
+### Image 4: Office Space Under the Ocean
 
 Prompt:
-“Underwater ceremony with genetically modified humans and suited divers gathered in a bioluminescent coral circle, ritualistic symbols glowing, exchanging light orbs, deep spiritual tone, fusion of technology and nature.”
+"Generate an Underwater office space which has glass walls and is situated at the bottom of the ocean. The only way in and out of this space is through a moon pool"
 
 Intent:
-To explore culture and spirituality in this speculative society. This ritual reflects their values of unity, balance with nature, and symbiosis between genetic and technological paths.
+To showcase how office spaces in this aquatic society would look like. The office would itself be not filled with water but since the entire city is underwater, the people who are arriving would come in via a moon-pool and change into dry clothes to wear in the office.
 
 Process:
-The first attempt felt too abstract. I reworded the prompt to emphasize visual clarity and “ritualistic symbols” to create a sense of meaning and tradition.
+This image took a lot of trial and error as the AI initially could not draw a moon-pool and was giving incorrect images. I had to cancel a line of images just because the AI's understanding of the image got too convoluted and I had to start over again. I finally ended up just asking it to create a room underwater with glass walls and a hole in the floor. Then adding the details and people gave me a successful image.
 
-⸻
+Image:
+![underwater office](/Users/dheerajmurthy/Downloads/final.png)
 
-Part 2: Evaluating AI’s Output
+## Evaluation of AI output
 
-Successes:
-• DALL·E excelled at capturing bioluminescent atmospheres, making the underwater setting feel immersive.
-• The blending of organic and synthetic elements was effective in conveying the dual paths of adaptation (genetic vs. technological).
-• With prompt iteration, I could direct the AI to create non-threatening, human-like enhanced individuals rather than alien or monstrous ones.
+Gemini's AI excelled in making illustrations of objects or bodies and was easily able to perform modifications to them. The addition of organic gills, fins was quite easy and required very little prototyping. However, it forgot context very fast. It would forget where to put the limbs on a body, whether the room should be underwater or above the ocean, the city was futuristic or an ancient ruin. Also every image was significantly different to the previous one even it the new one was an iteration of the previous. If too many modifications were made to an image and after a certain number of iterations, it would forget the original purpose and start drawing only the last suggestion and not the base, which limited the number of iterations that could be performed.
 
-Surprises:
-• Early outputs interpreted “gills and fins” as horror-style mutations rather than elegant modifications.
-• Some outputs used strange anatomical proportions (extra limbs or fins in odd places), which required prompt tuning.
+One issue that I expected but was surprised to not encounter was the finger and appendage issue that is common with AI generated art. AI generally tend to draw poor or wrong depictions of fingers such as drawing too few or too many appendages. But these error were nowhere to be seen. This could be due to the increasing complexity of the models and further training.
 
-Limitations:
-• Lack of nuanced cultural detail: The AI struggled to depict subtle cultural symbols without extensive prompting.
-• Human form ambiguity: When mixing technology with biology, the AI occasionally created non-viable designs (e.g., gills placed on arms).
-• Repetition: Some visuals repeated motifs despite varied prompts, indicating a reliance on preset visual tropes for underwater scenes.
+The AI was quite fast, but it would still take a few seconds to create the image. Gemini was very consistent with the generation, but Chat-GPT, with its DALL-E, would often stop citing irregular network speeds and large queues. I did not use Chat-GPT's new Ghibli filter in this project for 2 main reasons:
 
-Improvement Suggestions:
-• Allow users to provide concept sketches or image references to anchor the AI’s imagination.
-• More control over anatomical realism, especially for speculative bioengineering.
-• Better integration of symbolic language and cultural artifacts in speculative worldbuilding.
+- I did not feel the need for that kind of art style for my project since I was creating a futuristic dystopia, the art style would look out of place
+- I am not quite supportive of Chat-GPT being allowed to plagiarise a well-established art studio quite so brazenly and face little to no consequence to it. So, I would like to hold off on using this tool until it resolved its problems and comes to either acknowledge the source of the style or is given permission from Ghibli Studios.
 
-⸻
+## Part 3: Personal Reflection
 
-Part 3: Personal Reflection
+AI is one the most productive tool to exist in modern times. The sheer boost to output that AI provides is unlike anything seen since the industrial revolution. It allows an unskilled person to be on par with amateurs. But it shows it true power with skilled individuals, If you already know the art of drawing only then can you create a good image even with AI. Similarly, just asking the AI to draw a certain thing does not always work, You need to describe the thing and even then it requires heavy editing to achieve good results. The best way to go about doing this would be to get a base from the AI and then edit it on you own with digital art tools such as figma, inkscape, and so on.
 
-This project illuminated how AI can both expand and constrain speculative design.
+On a similar note, AI in other landscapes such as coding, law, and even medicine is only useful when it is in the hands of a skilled individuals. The output given by an AI may be 90 percent there to the goal, but to cross the last 10 percent or to guide the AI in the right direction, you need to have a base understanding of the process and a degree of expertise in the field.
 
-Enhancement of Creativity:
-• The ability to rapidly prototype entire worlds visually enabled a richer exploration of ideas.
-• AI served as a collaborative partner, suggesting aesthetics or combinations I might not have imagined (e.g., how coral can act as structural and spiritual elements).
-
-Limitations on Creativity:
-• AI image tools are inherently trained on existing data, which can reinforce tropes and clichés.
-• Speculative design thrives on ambiguity and critical engagement—areas where AI often fails due to its literalism.
-
-Future Use:
-
-In my future design work, I will likely:
-• Use AI-generated visuals for early-stage ideation or presentation material.
-• Supplement with human sketching or CAD for precise, critical explorations.
-• Remain cautious of over-relying on AI, especially where cultural nuance and ethical narratives are essential.
-
-⸻
+I would certainly continue to use AI in future work, but it would be limited to providing me with guidelines and structure so that I can do the work more efficiently. AI is a great learning tool, but when you overly rely on it, it can cause you to stop developing. Hence, we must also work hard and not rely on it so that we can continue the learning process.
