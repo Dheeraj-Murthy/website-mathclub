@@ -1,4 +1,10 @@
 ⸻
+title: assignment
+layout: post
+tags: [images, full]
+categories: [spit]
+
+---
 
 The Future Beneath: Speculating an Underwater Civilization
 
