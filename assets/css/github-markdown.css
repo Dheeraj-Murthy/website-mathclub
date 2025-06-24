@@ -1,0 +1,117 @@
+:root {
+    --bg-body: #0d1117;
+    --bg-card: #161b22;
+    --bg-muted: #21262d;
+    --text-primary: #e6edf3;
+    --text-secondary: #8b949e;
+    --text-accent: #db3fdd;
+    --text-accent-light: #a770ff;
+    --border-muted: #30363d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.75;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    background-color: var(--bg-card);
+    padding: 2.5rem;
+    max-width: 768px;
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 0.5s ease-in-out both;
+}
+
+.post h1, .post h2, .post h3 {
+  background: linear-gradient(to right, rgba(219, 63, 221, 0.15), transparent);
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid var(--text-accent);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.post h1 {
+  font-size: 2.4rem;
+  color: var(--text-accent);
+  border-left-color: var(--text-accent);
+}
+
+.post h2 {
+  font-size: 1.8rem;
+  color: var(--text-accent-light);
+  border-left-color: #a770ff;
+}
+
+.post h3 {
+  font-size: 1.4rem;
+  color: #cfa7ff;
+  border-left-color: #cfa7ff;
+}
+
+.post p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+
+.post-meta {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.tags {
+    margin-top: 0.5rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: var(--bg-muted);
+    color: var(--text-accent);
+    padding: 0.3rem 0.6rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.3rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+}
+
+.section {
+  border-top: 1px solid var(--border-muted);
+  padding-top: 2rem;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+}
+
+
+@keyframes fadeInUp {
+from {
+    opacity: 0;
+    transform: translateY(10px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+    .post {
+        padding: 1.5rem;
+    }
+}

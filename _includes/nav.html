@@ -1,12 +1,14 @@
 <nav>
-    <a href="{{site.baseurl}}">Home</a>
-    <a href="{{site.baseurl}}/tags">Tags</a>
-  <div class="dropdown">
-    <button class="dropbtn">Categories</button>
-    <div class="dropdown-content">
-      {% for category in site.categories %}
-            <a href="{{site.baseurl}}/category/{{ category[0] | slugify }}">{{ category[0] }}</a>
-      {% endfor %}
-    </div>
-  </div>
+<a href="{{ '/' | relative_url }}">Home</a>
+
+<script>
+  const BASEURL = "{{ site.baseurl }}";
+</script>
+
+<div class="search-container">
+  <input type="text" id="searchInput" placeholder="Search posts..." class="search-box">
+</div>
+  
+  <script src="{{ '/assets/js/search.js' | relative_url }}"></script>
+<a href="{{ '/tags' | relative_url }}">Tags</a>
 </nav>

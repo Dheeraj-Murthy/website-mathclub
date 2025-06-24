@@ -1,13 +1,17 @@
-// Client-side search with Lunr.js
 document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('searchInput');
     const searchResults = document.getElementById('searchResults');
 
-    // Fetch search index
-    fetch('/website-mathclub/search.json')
+    if (!searchInput || !searchResults) return;
+
+    let idx, posts;
+
+    // Fetch the search index
+    fetch(`${BASEURL}/search.json`)
         .then(res => res.json())
-        .then(posts => {
-            const idx = lunr(function() {
+        .then(data => {
+            posts = data;
+            idx = lunr(function () {
                 this.ref('id');
                 this.field('title');
                 this.field('content');
@@ -17,53 +21,61 @@ document.addEventListener('DOMContentLoaded', () => {
                     this.add({ id, ...post });
                 });
             });
-
-            searchInput.addEventListener('input', (e) => {
-                const query = e.target.value;
-                const results = idx.search(query);
-
-                searchResults.innerHTML = results.map(result => {
-                    const post = posts[result.ref];
-                    return `
-            <div class="post-card">
-              <h3><a href="${post.url}">${post.title}</a></h3>
-              <div class="tags">
-                ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
-              </div>
-              <p>${post.excerpt}</p>
-            </div>
-          `;
-                }).join('');
-            });
         });
-});
-document.addEventListener('DOMContentLoaded', () => {
-    const postItems = document.querySelectorAll('.post-list > li');
 
-    postItems.forEach(item => {
-        // Get the URL from the existing link
-        const link = item.querySelector('.post-link');
-        if (!link) return;
+    // Show results
+    const showResults = (query) => {
+        if (!idx || !query) {
+            searchResults.innerHTML = '';
+            searchResults.style.display = 'none';
+            return;
+        }
 
-        const url = link.href;
+        const results = idx.search(query);
+        if (results.length === 0) {
+            searchResults.innerHTML = '<p>No results found.</p>';
+        } else {
+            searchResults.innerHTML = results.map(result => {
+                const post = posts[result.ref];
+                return `
+          <div class="post-card">
+            <h3><a href="${post.url}">${post.title}</a></h3>
+            <div class="tags">
+              ${post.tags.map(tag => `<span class="tag">${tag}</span>`).join(' ')}
+            </div>
+            <p>${post.excerpt}</p>
+          </div>
+        `;
+            }).join('');
+        }
 
-        // Make the entire item clickable
-        item.style.cursor = 'pointer';
-        item.style.position = 'relative';
+        searchResults.style.display = 'block';
+    };
 
-        // Create an invisible overlay
-        const overlay = document.createElement('a');
-        overlay.href = url;
-        overlay.style.position = 'absolute';
-        overlay.style.top = '0';
-        overlay.style.left = '0';
-        overlay.style.right = '0';
-        overlay.style.bottom = '0';
-        overlay.style.zIndex = '1';
+    // Listen for input
+    searchInput.addEventListener('input', (e) => {
+        const query = e.target.value.trim();
+        showResults(query);
+    });
 
-        // Add hover effect via class
-        item.classList.add('clickable-post');
+    // Hide results on outside click
+    document.addEventListener('click', (e) => {
+        if (
+            e.target !== searchInput &&
+            !searchResults.contains(e.target)
+        ) {
+            searchResults.innerHTML = '';
+            searchResults.style.display = 'none';
+        }
+    });
 
-        item.appendChild(overlay);
+    // Optional: Clear on Escape
+    searchInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            searchInput.value = '';
+            searchResults.innerHTML = '';
+            searchResults.style.display = 'none';
+            searchInput.blur();
+        }
     });
 });

@@ -1,15 +1,15 @@
 ---
-layout: null
+layout: none
+permalink: /search.json
 ---
 [
   {% for post in site.posts %}
     {
-      "id": {{ forloop.index0 }},
       "title": {{ post.title | jsonify }},
-      "tags": {{ post.tags | jsonify }},
       "content": {{ post.content | strip_html | jsonify }},
-      "url": {{ post.url | jsonify }},
-      "excerpt": {{ post.excerpt | strip_html | jsonify }}
-    }{% unless forloop.last %},{% endunless %}
+      "tags": {{ post.tags | jsonify }},
+      "url": "{{ post.url | relative_url }}",
+      "excerpt": {{ post.excerpt | strip_html | truncate: 150 | jsonify }}
+    } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]

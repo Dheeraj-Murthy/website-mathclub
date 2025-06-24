@@ -13,7 +13,7 @@ baseurl: /website-mathclub
 collections:
   posts:
     output: true
-    permalink: /activities/:path/
+    permalink: /website-mathclub/activities/:path/
 
 defaults:
   - scope:
