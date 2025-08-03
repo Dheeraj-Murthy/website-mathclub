@@ -8,7 +8,7 @@ layout: default
   
   <div class="tags">
     Tags: {% for tag in page.tags %}
-      <a href="/tags#{{ tag | slugify }}">{{ tag }}</a>
+      <a href="{{ '/tags.html#' | relative_url }}{{ tag | slugify }}">{{ tag }}</a>
     {% endfor %}
   </div>
 

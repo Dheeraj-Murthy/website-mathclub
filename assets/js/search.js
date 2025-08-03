@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let idx, posts;
 
     // Fetch the search index
-    fetch(`${BASEURL}/search.json`)
+    fetch(SEARCH_INDEX_URL)
         .then(res => res.json())
         .then(data => {
             posts = data;

@@ -48,9 +48,11 @@ body {
     display: flex;
     flex-direction: column;
     background-image: 
+        url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239C92AC' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zm1 5v1H5zM0 0h1L6 6V5z'/%3E%3C/g%3E%3C/svg%3E"),
         radial-gradient(circle at 15% 50%, rgba(39, 41, 55, 0.2) 0px, transparent 50%),
         radial-gradient(circle at 85% 30%, rgba(39, 41, 55, 0.2) 0px, transparent 50%);
     background-attachment: fixed;
+    background-size: 6px 6px, cover, cover;
 }
 
 .container {
@@ -382,7 +384,7 @@ nav a:hover {
 }
 
 /* Markdown Styling for .post and .markdown-body */
-.post h1, .post h2, .post h3, .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+.post h1, .markdown-body h1 {
   background: linear-gradient(to right, rgba(219, 63, 221, 0.15), transparent);
   padding: 0.5rem 0.75rem;
   border-left: 4px solid #db3fdd; /* Using the purple from github-markdown.css */
@@ -390,9 +392,6 @@ nav a:hover {
   margin-bottom: 1rem;
   font-weight: 700;
   border-radius: 6px;
-}
-
-.post h1, .markdown-body h1 {
   font-size: 2.4rem;
   color: #db3fdd; /* Using the purple from github-markdown.css */
   border-left-color: #db3fdd;
@@ -400,14 +399,20 @@ nav a:hover {
 
 .post h2, .markdown-body h2 {
   font-size: 1.8rem;
-  color: #a770ff; /* Using the lighter purple from github-markdown.css */
-  border-left-color: #a770ff;
+  color: var(--text-primary); /* More subtle color */
+  margin-top: 2.5rem;
+  margin-bottom: 0.8rem;
+  border-left: 3px solid var(--border-color); /* Subtle border */
+  padding-left: 0.5rem;
 }
 
 .post h3, .markdown-body h3 {
   font-size: 1.4rem;
-  color: #cfa7ff; /* Using the even lighter purple from github-markdown.css */
-  border-left-color: #cfa7ff;
+  color: var(--text-primary); /* More subtle color */
+  margin-top: 2rem;
+  margin-bottom: 0.6rem;
+  border-left: 2px solid var(--border-color); /* Subtle border */
+  padding-left: 0.4rem;
 }
 
 .post p, .markdown-body p {
