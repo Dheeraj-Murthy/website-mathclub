@@ -381,6 +381,56 @@ nav a:hover {
     }
 }
 
+/* Markdown Styling for .post and .markdown-body */
+.post h1, .post h2, .post h3, .markdown-body h1, .markdown-body h2, .markdown-body h3 {
+  background: linear-gradient(to right, rgba(219, 63, 221, 0.15), transparent);
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid #db3fdd; /* Using the purple from github-markdown.css */
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  border-radius: 6px;
+}
+
+.post h1, .markdown-body h1 {
+  font-size: 2.4rem;
+  color: #db3fdd; /* Using the purple from github-markdown.css */
+  border-left-color: #db3fdd;
+}
+
+.post h2, .markdown-body h2 {
+  font-size: 1.8rem;
+  color: #a770ff; /* Using the lighter purple from github-markdown.css */
+  border-left-color: #a770ff;
+}
+
+.post h3, .markdown-body h3 {
+  font-size: 1.4rem;
+  color: #cfa7ff; /* Using the even lighter purple from github-markdown.css */
+  border-left-color: #cfa7ff;
+}
+
+.post p, .markdown-body p {
+    margin-bottom: 1.25rem;
+    font-size: 1.05rem;
+    color: var(--text-primary);
+}
+
+/* Make post list items clickable */
+.post-list li {
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+}
+
+.post-list li a.post-link::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1; /* Ensure it's above other content but below the actual link text */
+}
+
 #searchResults {
   max-width: 800px;
   margin: 1.5rem auto;
