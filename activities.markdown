@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Our Activities
+permalink: /activities/
 ---
 
 # Our Activities
